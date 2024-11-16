@@ -24,6 +24,7 @@ namespace C__Sprint1_Mastermind
         {
             InitializeComponent();
             GenerateCode();
+            AddColor();
         }
 
         private void GenerateCode()
@@ -67,6 +68,36 @@ namespace C__Sprint1_Mastermind
                     this.Title += " Blue";
                 }
             }
+        }
+        private void AddColor()
+        {
+            comboBox1.Items.Add(new SolidColorBrush(Colors.Red));
+            comboBox1.Items.Add(new SolidColorBrush(Colors.Yellow));
+            comboBox1.Items.Add(new SolidColorBrush(Colors.Orange));
+            comboBox1.Items.Add(new SolidColorBrush(Colors.White));
+            comboBox1.Items.Add(new SolidColorBrush(Colors.Green));
+            comboBox1.Items.Add(new SolidColorBrush(Colors.Blue));
+
+            comboBox2.Items.Add(new SolidColorBrush(Colors.Red));
+            comboBox2.Items.Add(new SolidColorBrush(Colors.Yellow));
+            comboBox2.Items.Add(new SolidColorBrush(Colors.Orange));
+            comboBox2.Items.Add(new SolidColorBrush(Colors.White));
+            comboBox2.Items.Add(new SolidColorBrush(Colors.Green));
+            comboBox2.Items.Add(new SolidColorBrush(Colors.Blue));
+
+            comboBox3.Items.Add(new SolidColorBrush(Colors.Red));
+            comboBox3.Items.Add(new SolidColorBrush(Colors.Yellow));
+            comboBox3.Items.Add(new SolidColorBrush(Colors.Orange));
+            comboBox3.Items.Add(new SolidColorBrush(Colors.White));
+            comboBox3.Items.Add(new SolidColorBrush(Colors.Green));
+            comboBox3.Items.Add(new SolidColorBrush(Colors.Blue));
+
+            comboBox4.Items.Add(new SolidColorBrush(Colors.Red));
+            comboBox4.Items.Add(new SolidColorBrush(Colors.Yellow));
+            comboBox4.Items.Add(new SolidColorBrush(Colors.Orange));
+            comboBox4.Items.Add(new SolidColorBrush(Colors.White));
+            comboBox4.Items.Add(new SolidColorBrush(Colors.Green));
+            comboBox4.Items.Add(new SolidColorBrush(Colors.Blue));
         }
     }
 } 
