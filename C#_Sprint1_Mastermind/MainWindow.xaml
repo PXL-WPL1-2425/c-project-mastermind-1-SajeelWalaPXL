@@ -14,7 +14,7 @@
         <ComboBox  x:Name="comboBox2" HorizontalAlignment="Left" Height="40" Margin="202,7,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="ComboBoxSelection" IsEditable="False"  />
         <ComboBox  x:Name="comboBox3" HorizontalAlignment="Left" Height="40" Margin="403,7,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="ComboBoxSelection" IsEditable="False"/>
         <ComboBox  x:Name="comboBox4" HorizontalAlignment="Left" Height="40" Margin="603,7,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="ComboBoxSelection" IsEditable="False"/>
-        <Button  Content="Check code" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="400" />
+        <Button  Content="Check code" Height="40" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="400" Click="Button_Click" />
         <Label x:Name="showColor" HorizontalAlignment="Left" Margin="314,190,0,0" VerticalAlignment="Top" Width="180" RenderTransformOrigin="0.593,0.591" FontSize="22" FontWeight="Bold" Height="41"/>
 
     </Grid>

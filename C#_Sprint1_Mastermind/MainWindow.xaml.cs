@@ -145,6 +145,18 @@ namespace C__Sprint1_Mastermind
             }
            
         }
+        /// <summary>
+        /// <para> Wanneer er op de knop geklikt wordt, wordt de ingegeven code gecontroleerd.</para>
+        /// <para> Wanneer de kleur voorkomt in de code, maar niet op de juiste plaats staat, wordt een witte rand (Colors.Wheat) rond de kleur getoond.</para>
+        /// <para> Wanneer de kleur op de juiste plaats staat, wordt er een rode rand (Colors.DarkRed) getoond. </para>
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+          
+            
+        }
     }
 }
         
