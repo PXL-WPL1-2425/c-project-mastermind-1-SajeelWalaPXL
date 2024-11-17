@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Emit;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Windows;
@@ -27,6 +28,13 @@ namespace C__Sprint1_Mastermind
             AddColor();
         }
 
+
+        /// <summary>
+        /// <para> De methode GenerateCode wordt gebruikt 
+        /// om een random code van 4 kleuren te genereren </para>
+        /// <para> Om het spel makkelijker te testen wordt deze code 
+        /// in de titel van het window getoond </para>
+        /// </summary>
         private void GenerateCode()
 
         {
@@ -59,7 +67,7 @@ namespace C__Sprint1_Mastermind
                 {
                     this.Title += " White";
                 }
-                else if (colorCode == colorGreen) 
+                else if (colorCode == colorGreen)
                 {
                     this.Title += " Green";
                 }
@@ -69,6 +77,10 @@ namespace C__Sprint1_Mastermind
                 }
             }
         }
+
+        /// <summary>
+        /// De 4 comboboxen worden gevuld met de 6 beschikbare kleuren.
+        /// </summary>
         private void AddColor()
         {
             comboBox1.Items.Add(new SolidColorBrush(Colors.Red));
@@ -99,8 +111,42 @@ namespace C__Sprint1_Mastermind
             comboBox4.Items.Add(new SolidColorBrush(Colors.Green));
             comboBox4.Items.Add(new SolidColorBrush(Colors.Blue));
         }
+
+        /// <summary>
+        /// Wanneer er een kleur gekozen wordt uit een combobox 
+        /// wordt deze getoond in een label.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e">Deze parameter bevat informatie over de selectie van de gebruiker, 
+        /// zoals het nieuwe geselecteerde item en de vorige selectie.</param>
+        private void ComboboxSelection(object sender, SelectionChangedEventArgs e)
+        {
+
+            
+            if (sender == comboBox1)
+            {
+                showColor.Content = ((SolidColorBrush)comboBox1.SelectedItem).Color.ToString();
+                showColor.Background = ((SolidColorBrush)comboBox1.SelectedItem);
+            }
+            else if (sender == comboBox2)
+            {
+                showColor.Content = ((SolidColorBrush)comboBox2.SelectedItem).Color.ToString();
+                showColor.Background = ((SolidColorBrush)comboBox2.SelectedItem);
+            }
+            else if (sender == comboBox3)
+            {
+                showColor.Content = ((SolidColorBrush)comboBox3.SelectedItem).Color.ToString();
+                showColor.Background = ((SolidColorBrush)comboBox3.SelectedItem);
+            }
+            else if (sender == comboBox4)
+            {
+                showColor.Content = ((SolidColorBrush)comboBox4.SelectedItem).Color.ToString();
+                showColor.Background = ((SolidColorBrush)comboBox4.SelectedItem);
+            }
+           
+        }
     }
-} 
+}
         
             
         
